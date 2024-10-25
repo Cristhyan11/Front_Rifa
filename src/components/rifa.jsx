@@ -38,7 +38,6 @@ function Rifa() {
         setLoading(false);
       }
     };
-
     fetchRegistros();
   }, [navigate, user_id]);
 
@@ -47,8 +46,8 @@ function Rifa() {
       setModalMessage('Has alcanzado el límite de 5 intentos');
       return;
     }
-    if (numero < 0 || numero > 999) {
-      setModalMessage('El número debe estar entre 000 y 999');
+    if (!/^[1-9]\d{0,2}$/.test(numero)) { // Validar número
+      setModalMessage('El número debe ser un entero positivo sin ceros a la izquierda y entre 000 y 999');
       return;
     }
     setLoading(true);
@@ -82,7 +81,6 @@ function Rifa() {
       setLoading(false);
     }
   };
-  
 
   const closeModal = () => {
     setModalMessage('');
@@ -103,7 +101,7 @@ function Rifa() {
           value={numero}
           onChange={(e) => setNumero(e.target.value)}
           placeholder="Número (000-999)"
-          min="0"
+          min="1" // No permitir 0
           max="999"
         />
         <button onClick={handleRegister} className="register-button">Registrar Número</button>
