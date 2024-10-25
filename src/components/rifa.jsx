@@ -23,7 +23,7 @@ function Rifa() {
     console.log("User_id", user_id);
     const fetchRegistros = async () => {
       try {
-        const response = await fetch(`http://localhost:5000/api/rifa?user_id=${user_id}`);
+        const response = await fetch(`https://back-rifa-swart.vercel.app/api/rifa?user_id=${user_id}`);
         const result = await response.json();
         if (result.status === "Success") {
           setRegistros(result.data);
@@ -53,7 +53,7 @@ function Rifa() {
     }
     setLoading(true);
     try {
-      const response = await fetch('http://localhost:5000/api/rifa', {
+      const response = await fetch('https://back-rifa-swart.vercel.app/api/rifa', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

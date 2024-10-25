@@ -1,4 +1,9 @@
-/* login.css */
+/* Reseteo CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 /* Estilo general del contenedor del formulario */
 .form-container {
@@ -8,7 +13,7 @@
   justify-content: center; /* Centra verticalmente */
   min-height: 100vh; /* Asegura que el contenedor ocupe toda la altura de la ventana */
   background-color: #242424; /* Fondo oscuro */
-  color: rgb(0, 0, 0); /* Color del texto blanco */
+  color: rgb(0, 0, 0); /* Color del texto negro */
   padding: 20px;
 }
 
@@ -40,7 +45,7 @@
   border: 1px solid #ccc; /* Bordes claros */
   border-radius: 4px; /* Bordes redondeados */
   font-size: 1rem; /* Tamaño de fuente */
-  color: black; /* Color del texto negro */ /* Cambiado a negro */
+  color: black; /* Color del texto negro */
   background-color: white; /* Color de fondo blanco para los campos de entrada */
   transition: border-color 0.3s; /* Transición suave para el color del borde */
 }
@@ -72,15 +77,17 @@
 .modal {
   background: rgb(0, 0, 0);
   padding: 2rem;
-  position: absolute;
+  position: fixed; /* Cambiar a fixed para evitar scroll */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 8px;
   max-width: 250px;
   width: 100%;
+  box-sizing: border-box; /* Asegurar uso de box-sizing */
 }
 
+/* Contenido del modal */
 .modal-content {
   text-align: center;
 }
@@ -88,4 +95,9 @@
 /* Estilo de superposición del modal */
 .overlay {
   background-color: rgba(0, 0, 0, 0.7); /* Superposición oscura */
+  position: fixed; /* Cambiar a fixed para evitar scroll */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }

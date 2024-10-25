@@ -28,7 +28,7 @@ function RegistrarAdmin() {
     console.log('Form submitted:', { email, password });
 
     try {
-      const response = await fetch('http://localhost:5000/api/register-admin', {
+      const response = await fetch('https://back-rifa-swart.vercel.app/api/register-admin', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

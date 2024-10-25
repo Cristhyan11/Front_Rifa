@@ -17,7 +17,7 @@ function VistaGanadores() {
     // Obtener ganadores de la base de datos al cargar el componente
     const fetchGanadores = async () => {
       try {
-        const response = await fetch('http://localhost:5000/api/ganadores'); // Asegúrate de que esta ruta sea correcta
+        const response = await fetch('https://back-rifa-swart.vercel.app/api/ganadores'); // Asegúrate de que esta ruta sea correcta
         const data = await response.json();
         setGanadores(data);
       } catch (error) {

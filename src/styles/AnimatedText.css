@@ -1,7 +1,20 @@
-/* AnimatedText.css */
+/* Reseteo CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo para el texto animado */
 .animated-text {
-    font-size: 24px;
-    color: #fffdfd; /* Color del texto */
-    /* Otros estilos de animación o diseño */
-  }
-  
+  font-size: 24px;
+  color: #fffdfd; /* Color del texto */
+  /* Ejemplo de animación */
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* Ejemplo de animación keyframes */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
