@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Modal from 'react-modal';
 import { useNavigate } from 'react-router-dom';
-import '../styles/login.css';
+import '../styles/registro.css';
 
 Modal.setAppElement('#root');
 
@@ -157,6 +157,7 @@ function Registro() {
           />
         </div>
         <button type="submit" className="submit-button">Registrarse</button>
+        <label htmlFor="">                         </label>
         <button type="button" className="submit-button" onClick={() => navigate('/home')}>Home</button>
       </form>
       <Modal

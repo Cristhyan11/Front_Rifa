@@ -8,13 +8,13 @@
 /* Estilo para el texto animado */
 .animated-text {
   font-size: 24px;
-  color: #fffdfd; /* Color del texto */
+  color: #ff0000; /* Color del texto */
   /* Ejemplo de animación */
   animation: fadeIn 2s ease-in-out;
 }
 
 /* Ejemplo de animación keyframes */
 @keyframes fadeIn {
-  0% { opacity: 0; }
+  50% { opacity: 1; }
   100% { opacity: 1; }
 }

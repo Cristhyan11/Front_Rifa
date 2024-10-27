@@ -85,6 +85,7 @@ function Login({ onLoginSuccess }) {
           />
         </div>
         <button type="submit" className="submit-button">Login</button>
+        <label htmlFor="">                         </label>
         <button type="button" className="submit-button" onClick={handleHomeClick}>Home</button>
       </form>
       <Modal

@@ -56,7 +56,7 @@ function VistaGanadores() {
         <tbody>
           {ganadores.map((ganador) => (
             <tr key={ganador.id}>
-              <td>{ganador.fecha}</td>
+              <td>{new Date(ganador.fecha_hora).toLocaleString('es-CO', { timeZone: 'America/Bogota' })}</td>
               <td>{ganador.nombre}</td>
               <td>{ganador.cedula}</td>
               <td>{ganador.celular}</td>

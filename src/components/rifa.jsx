@@ -121,7 +121,7 @@ function Rifa() {
           <tbody>
             {Array.isArray(registros) && registros.map((registro, index) => (
               <tr key={index}>
-                <td>{new Date(registro.fecha_hora).toLocaleString()}</td>
+                <td>{new Date(registro.fecha_hora).toLocaleString('es-CO', { timeZone: 'America/Bogota' })}</td>
                 <td>{registro.numero_registrado}</td>
                 <td>{registro.premio_register}</td>
               </tr>

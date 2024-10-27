@@ -81,3 +81,21 @@
   background-color: #007bff;
   color: white;
 }
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed; /* Cambiar a fixed para evitar scroll */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(129, 77, 77, 0); /* Fondo semitransparente */
+  color: black;
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 250px;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 1000; /* Asegúrate de que esté sobre otros elementos */
+}
+

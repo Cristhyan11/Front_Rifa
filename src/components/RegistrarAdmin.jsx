@@ -93,6 +93,7 @@ function RegistrarAdmin() {
           />
         </div>
         <button type="submit" className="submit-button">Registrar</button>
+        <label htmlFor="">                         </label>
         <button type="button" className="submit-button" onClick={handleHomeClick}>Home</button>
       </form>
 

@@ -49,7 +49,7 @@ const Home = () => {
       {showButtons && (
         <div className="button-container">
           <button className="register-button" onClick={handleRegisterClick}>Registrar</button>
-          <label className="label-white">O</label>
+          <label htmlFor="">                         </label>
           <button className="enter-button" onClick={handleEnterClick}>Entrar</button>
         </div>
       )}

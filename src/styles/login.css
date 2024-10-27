@@ -3,7 +3,18 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+.overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
 /* Estilo general del contenedor del formulario */
 .form-container {
   display: flex;
@@ -45,7 +56,7 @@
   border-radius: 4px; /* Bordes redondeados */
   font-size: 1rem; /* Tamaño de fuente */
   color: black; /* Color del texto negro */
-  background-color: white; /* Color de fondo blanco para los campos de entrada */
+  background-color: rgb(255, 255, 255); /* Color de fondo blanco para los campos de entrada */
   transition: border-color 0.3s; /* Transición suave para el color del borde */
 }
 
@@ -58,7 +69,7 @@
 /* Estilo del botón de envío */
 .submit-button {
   background-color: #007bff; /* Color de fondo azul */
-  color: white; /* Color del texto */
+  color: rgb(0, 0, 0); /* Color del texto */
   border: none; /* Sin bordes */
   border-radius: 4px; /* Bordes redondeados */
   padding: 10px 15px; /* Espaciado interno */
@@ -70,4 +81,29 @@
 /* Efecto de hover en el botón */
 .submit-button:hover {
   background-color: #0056b3; /* Color más oscuro al pasar el ratón */
+}
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed; /* Cambiar a fixed para evitar scroll */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgb(144, 168, 233);
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 250px;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 1000; /* Asegúrate de que esté sobre otros elementos */
+}
+.modal-content {
+  background-color: rgb(144, 168, 233);
+  color: black;
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 90%;
+  margin: 0 auto;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
