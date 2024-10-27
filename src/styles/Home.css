@@ -1,39 +1,26 @@
-/* Reseteo CSS */
+/* Home.css */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Root variables y estilos generales */
-:root {
-    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-    line-height: 1.5;
-    font-weight: 400;
-    color-scheme: light dark;
-    color: rgba(206, 141, 141, 0.87);
-    background-color: #242424;
-    font-synthesis: none;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 0;  /* Asegurarse de que el padding sea 0 */
-    text-align: center;
-    overflow-x: hidden; /* Para prevenir scroll horizontal */
-}
-
-/* Estilos para formulario */
 .form-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
-    background-color: #121212;
-    color: white;
-    padding: 20px;
+    width: 100vw; /* Asegura que ocupe el 100% del ancho de la ventana */
+    min-height: 100vh; /* Usa min-height en vez de height */
+    background-color: #000000; /* Ajustar color de fondo */
+    color: rgb(0, 0, 0);
+    padding: 0;
+    background-image: url('../assets/yargon-kerman-webp-net-gifmaker-39.gif');
+    background-size: cover; /* Ajusta la imagen para cubrir toda el área */
+    background-position: center; /* Centrar la imagen */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
 }
 
 /* Estilos para los inputs */
@@ -49,8 +36,7 @@ input, textarea {
     margin-top: 20px;
 }
 
-.register-button,
-.enter-button {
+.register-button, .enter-button {
     padding: 10px 20px;
     margin: 5px;
     font-size: 16px;
@@ -70,13 +56,11 @@ input, textarea {
     background-color: #008CBA;
 }
 
-.register-button:hover,
-.enter-button:hover {
+.register-button:hover, .enter-button:hover {
     transform: scale(1.05);
 }
 
-.register-button:focus,
-.enter-button:focus {
+.register-button:focus, .enter-button:focus {
     outline: none;
     box-shadow: 0 0 5px rgba(0, 139, 197, 0.7);
 }
@@ -89,20 +73,9 @@ h1, p {
 
 /* Media queries para dispositivos móviles */
 @media (max-width: 600px) {
-    .register-button,
-    .enter-button {
+    .register-button, .enter-button {
         font-size: 14px;
         padding: 8px 16px;
     }
 }
 
-/* Estilos para textos animados */
-.animated-text {
-    font-size: 24px;
-    color: #333;
-}
-
-/* Estilos específicos adicionales */
-.label-white {
-    color: white;
-}

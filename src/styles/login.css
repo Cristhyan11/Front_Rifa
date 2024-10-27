@@ -1,4 +1,3 @@
-/* Reseteo CSS */
 * {
   margin: 0;
   padding: 0;
@@ -42,7 +41,7 @@
 .form-group input {
   width: 100%; /* Ancho completo */
   padding: 10px; /* Espaciado interno */
-  border: 1px solid #ccc; /* Bordes claros */
+  border: 1px solid #000000; /* Bordes claros */
   border-radius: 4px; /* Bordes redondeados */
   font-size: 1rem; /* Tamaño de fuente */
   color: black; /* Color del texto negro */
@@ -71,33 +70,4 @@
 /* Efecto de hover en el botón */
 .submit-button:hover {
   background-color: #0056b3; /* Color más oscuro al pasar el ratón */
-}
-
-/* Estilo del modal */
-.modal {
-  background: rgb(0, 0, 0);
-  padding: 2rem;
-  position: fixed; /* Cambiar a fixed para evitar scroll */
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 8px;
-  max-width: 250px;
-  width: 100%;
-  box-sizing: border-box; /* Asegurar uso de box-sizing */
-}
-
-/* Contenido del modal */
-.modal-content {
-  text-align: center;
-}
-
-/* Estilo de superposición del modal */
-.overlay {
-  background-color: rgba(0, 0, 0, 0.7); /* Superposición oscura */
-  position: fixed; /* Cambiar a fixed para evitar scroll */
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
 }

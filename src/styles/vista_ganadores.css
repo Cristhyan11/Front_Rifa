@@ -1,11 +1,10 @@
-/* Reseteo CSS */
+/* vista_ganador.css */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Estilo del contenedor principal */
 .ganadores-container {
   display: flex;
   flex-direction: column;
@@ -13,9 +12,17 @@
   justify-content: center;
   min-height: 100vh;
   background-color: #242424; /* Fondo oscuro */
-  color: white; /* Texto blanco */
+  background-image: url('../assets/mario.gif'); /* Agrega tu gif aquí */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: rgb(255, 255, 255); /* Texto blanco */
   padding: 20px;
 }
+
+/* Resto de tus estilos */
+
 
 /* Título de ganadores */
 .ganadores-title {
@@ -32,10 +39,13 @@
 
 .ganadores-table th,
 .ganadores-table td {
-  border: 1px solid #ccc;
-  padding: 10px;
-  text-align: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(114, 125, 189); /* Fondo blanco */
+    color: black; /* Texto negro */
 }
+
 
 .ganadores-table th {
   background-color: #007bff;

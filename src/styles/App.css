@@ -1,7 +1,5 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
+html, body, #root, .App {
+  height: 100%;
+  margin: 0;
   padding: 0;
-  text-align: center;
-  overflow-x: hidden; /* Asegura que no haya scroll horizontal */
 }
