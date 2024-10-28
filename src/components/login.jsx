@@ -61,7 +61,7 @@ function Login({ onLoginSuccess }) {
   return (
     <div className="form-container">
       <form onSubmit={handleSubmit} className="ai-agent-form">
-        <h2 className="form-title">Logueate</h2>
+        <h2 className="form-title">Entrar</h2>
         <div className="form-group">
           <label htmlFor="email">Email</label>
           <input
